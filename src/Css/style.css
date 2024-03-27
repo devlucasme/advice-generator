@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Manrope';
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container .advice-generator {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--advice-card-color);
+    width: 480px;
+    height: 300px;
+    border-radius: 10px;
+    gap: 15px;
+}
+
+.container .advice-generator .advice {
+    text-align: center;
+    color: var(--advice-dice-color);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+.container .advice-generator .text {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.container .advice-generator .pattern-divider {
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 25px;
+}
+
+.container .advice-generator .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .advice-generator .button-generator {
+    border: none;
+    background-color: var(--advice-dice-color);
+    border-radius: 50px;
+    padding: 20px;
+    position: relative;
+    bottom: 40px;
+}
+
+img {
+    width: 20px;
+}
+
+.advice-generator .button-generator:hover{
+    color: #53FFAB;
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--advice-dice-color);
+}
+
+@media(max-width: 768px){
+    .advice-generator{
+        padding-inline: 50px;
+        width: 386px;
+    }
+
+    .advice-generator p{
+        font-size: 20px;
+        padding: 26px;
+    }
+}
+
+
+
+
+
