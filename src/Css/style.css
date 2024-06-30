@@ -1,92 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-color: var(--background-color);
     color: var(--text-color);
-    font-family: 'Manrope';
+    font-weight: 800;
+    font-family: 'Manrope', sans-serif;
 }
 
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.container .advice-generator {
+.advice-generator {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: var(--advice-card-color);
-    width: 480px;
-    height: 300px;
     border-radius: 10px;
-    gap: 15px;
+    padding: 20px;
+    max-width: 450px;
 }
 
-.container .advice-generator .advice {
-    text-align: center;
+.advice-generator .advice {
     color: var(--advice-dice-color);
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     font-size: 12px;
-    padding: 20px;
     margin-top: 20px;
-    font-weight: 800;
 }
 
-.container .advice-generator .text {
-    text-align: center;
+.advice-generator .description {
     font-size: 25px;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-weight: 800;
-}
-
-.container .advice-generator .pattern-divider {
+    padding: 23px;
     text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 25px;
 }
 
-.container .advice-generator .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.advice-generator picture img {
+    width: 100%;
 }
 
-.container .advice-generator .button-generator {
+.advice-generator .button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     border: none;
     background-color: var(--advice-dice-color);
-    border-radius: 50px;
-    padding: 20px;
-    position: relative;
-    bottom: 40px;
+    transform: translateY(85%);
+    transition: 0.3s ease-in-out;
 }
 
-img {
-    width: 20px;
-}
-
-.advice-generator .button-generator:hover{
-    color: #53FFAB;
+.advice-generator .button:hover {
+    color: var(--advice-dice-color);
     cursor: pointer;
     box-shadow: 0 5px 15px var(--advice-dice-color);
 }
-
-@media(max-width: 768px){
-    .advice-generator{
-        padding-inline: 50px;
-        width: 386px;
-    }
-
-    .advice-generator p{
-        font-size: 20px;
-        padding: 26px;
-    }
-}
-
-
-
-
-
